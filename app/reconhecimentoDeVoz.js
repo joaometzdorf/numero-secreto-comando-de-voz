@@ -1,6 +1,7 @@
 const elementoChute = document.getElementById("chute");
 
-window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+window.SpeechRecognition =
+  window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();
 recognition.lang = "pt-Br";
@@ -13,6 +14,7 @@ function onSpeak(e) {
   exibeChuteNaTela(chute);
   verificaSeOChutePossuiUmValorValido(chute);
   gameOver(chute);
+  corrigeNumeros(chute);
 }
 
 function exibeChuteNaTela(chute) {

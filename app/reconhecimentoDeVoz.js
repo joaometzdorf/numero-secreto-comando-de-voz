@@ -14,13 +14,13 @@ function onSpeak(e) {
   exibeChuteNaTela(chute);
   verificaSeOChutePossuiUmValorValido(chute);
   gameOver(chute);
-  corrigeNumeros(chute);
 }
 
 function exibeChuteNaTela(chute) {
+  const chuteCorrigido = corrigeNumeros(chute);
   elementoChute.innerHTML = `
         <div>Você disse</div>
-        <span class="box">${chute}</span>
+        <span class="box">${chuteCorrigido}</span>
      `;
 }
 

@@ -6,7 +6,7 @@
 
 ### Screenshot
 
-![](./numero-secreto-comnando-de-voz.png)
+![](./numero-secreto-comando-de-voz.png)
 
 ### Links
 
